@@ -1,0 +1,13 @@
+button {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    font-size: 2rem;
+}
+
+#board {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
