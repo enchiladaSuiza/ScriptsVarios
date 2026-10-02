@@ -10,6 +10,10 @@ export class Controller {
     }
 
     renderProjects() {
+        if (!this.projects) {
+            return;
+        }
+        
         for (const [name, project] of Object.entries(this.projects)) {
             const projectCard = document.createElement('div');
             projectCard.classList.add('project-card');

@@ -1,10 +1,14 @@
+import './style.css';
+
 import { Todo } from "./classes/todo.js";
 import { Project } from "./classes/project.js";
 import { Controller } from "./classes/controller.js";
 
 let projects = JSON.parse(localStorage.getItem('projects'));
 
-// console.log(projects);
+if (!projects) {
+    projects = { }
+}
 
 const main = document.querySelector('main');
 const controller = new Controller(main, projects);
