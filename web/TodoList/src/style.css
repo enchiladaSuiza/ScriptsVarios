@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 1rem;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-card {
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 1rem;
+    /* margin: 1rem 0; */
+    height: min-content;
+    flex-grow: 1;
+}
+
+.todo-card {
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.todo-card p:first-child {
+    font-weight: bold;
+}
+
+.completed {
+    border: 1px green solid;
+}
+
+.due-date {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.priority {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.completed-separator {
+    width: 100%;
+}
+
+.invisible {
+    display: none !important;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header button {
+    margin: 10px 0;
+    padding: 6px 12px;
+}
+
+.options {
+    display: flex;
+    justify-content: start;
+    margin: 10px 0 0 0;
+    gap: 4px;
+}
+
+.delete-todo {
+    padding: 0 3px;
+}
+
+.add-todo {
+    padding: 0 3px;
+    height: min-content;
+    margin-left: auto;
+}
+
+.edit-todo {
+    padding: 0 6px;
+}
+
+.delete-project {
+    padding: 0 3px;
+    height: min-content;
+}
+
+.mark {
+    margin-left: auto;
+}
+
+.project-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.editor-card {
+    border: 1px blue solid;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    height: min-content;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+
+#new-project {
+    margin-left: auto;
+    height: min-content;
+}
