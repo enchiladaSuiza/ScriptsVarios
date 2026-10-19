@@ -26,17 +26,19 @@ pdffile = input("Path to the PDF file (with .pdf extension): ")
 idioma = input('Language (en, es, fr, de): ')
 titulo = input('Title: ')
 
-autores_input = input('Authors (comma separated): ').split(',')
+autores_input = input('Authors (; separated): ').split(';')
 autores = []
 for autor in autores_input:
     autores.append(autor.strip())
 
 print(autores)
 
-palabras_input = input('Keywords (comma separated): ')
+palabras_input = input('Keywords (; separated): ').split(';')
 palabras = []
 for palabra in palabras_input:
     palabras.append(palabra.strip())
+
+print(palabras)
 
 with pikepdf.Pdf.open(pdffile, allow_overwriting_input=True) as articulo:
     with articulo.open_metadata() as meta:
